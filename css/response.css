@@ -1,0 +1,692 @@
+.bg-band {
+  position: fixed;
+  width: 100%;
+  height: 1.5rem;
+  background-color: #ffbf80;
+  z-index: 2;
+}
+.img {
+  width: 4rem;
+  height: 1.5rem;
+  float: left;
+  background-image: url("../images/logo02.png");
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: 0.5rem 0.1rem;
+}
+header > div > ul {
+  display: block;
+  float: right;
+}
+header > div > ul > li {
+  display: block;
+  float: left;
+  height: 1.5em;
+}
+header > div > ul > li > a {
+  float: left;
+  font-size: 0.35rem;
+  margin: 0.48rem 0em;
+  padding: 0 0.8em;
+  border-right: 1px solid gray;
+}
+header > div > ul > li > a:hover {
+  background-color: #ffb265;
+  color: white;
+}
+.nav-k {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  header > div > ul {
+    display: none;
+  }
+  .nav-k {
+    position: relative;
+    float: right;
+    display: block;
+    width: 2.5rem;
+    height: 1.5rem;
+    background-image: url("../images/classify.png");
+    background-size: 0.9rem;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    border-left: 1px white solid;
+  }
+  .nav-k:hover {
+    background-color: #ffb56c;
+  }
+  .nav-k > div {
+    transition: all 0.25s;
+    position: absolute;
+    right: 0px;
+    top: 1.5rem;
+    height: 0rem;
+    width: 20rem;
+    background-color: #ffc992;
+    overflow: hidden;
+  }
+  .nav-k > div > ul > li > a {
+    position: relative;
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: right;
+    padding-right: 0.5rem;
+    font-size: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+  }
+  .nav-k > div > ul > li > a:nth-child(1) {
+    border-top: 1px solid rgba(255, 255, 255, 0.247);
+  }
+  .nav-k > div > ul > li > a:nth-child(7) {
+    border-bottom: none;
+  }
+  .nav-k:hover div {
+    height: 7rem;
+  }
+  .nav-k > div > ul > li > a:hover {
+    background-color: #ffbc79;
+    color: white;
+  }
+}
+/* 固定占位 */
+.placehold {
+  height: 1.5rem;
+  padding-top: 1.5rem;
+}
+/* 背景海报 */
+.poster1 {
+  width: 100%;
+  height: 10rem;
+  background-image: url("../images/fujiyama.jpg");
+  background-position: top center;
+}
+.adv-poster {
+  margin: 0 auto;
+  width: 15rem;
+}
+div[class*="swiper-slide swiper-post"] {
+  height: 10rem !important;
+  width: 100%;
+}
+div[class*="swiper-slide swiper-post"] > div,
+div[class*="swiper-slide swiper-post"] > a {
+  height: inherit;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+.swiper-post1 > div {
+  background-image: url("../images/poster1.jpg");
+}
+.swiper-post2 > a {
+  display: block;
+}
+.swiper-post2 > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* 登录栏 */
+.logoin {
+  float: left;
+  width: 45%;
+  height: 8rem;
+  background-color: pink;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  display: none;
+}
+/* 1000区间变形 */
+@media screen and (min-width: 1200px) {
+  .adv-poster {
+    float: left;
+  }
+  .logoin {
+    display: block;
+  }
+  .diploma {
+    margin-top: 1rem;
+    border: 6px #fcdfcb solid;
+    /* border-radius: 10px; */
+  }
+  .diploma-exhibition {
+    margin-bottom: 30px;
+  }
+  .diploma-exhibition > li {
+    display: inline-block;
+    width: 240px;
+    height: 180px;
+    margin-left: 42px;
+    margin-top: 30px;
+  }
+  .diploma-exhibition > li > img {
+    width: 100%;
+  }
+  .body-2 > p {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #ee6d69;
+    margin-bottom: 40px;
+  }
+  .body-2 > ul > li {
+    height: 140px;
+    width: inherit;
+    border: 2px dashed #f9dfca;
+    margin-top: 5px;
+  }
+  .body-2 > ul > li:nth-of-type(2n) > img {
+    float: right;
+    height: 128px;
+    margin-right: 4px;
+    margin-top: 4px;
+  }
+  .body-2 > ul > li:nth-of-type(2n) > span {
+    float: right;
+    height: 128px;
+    line-height: 128px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fabd95;
+    margin-right: 30px;
+  }
+  .body-2 > ul > li:nth-of-type(2n+1) > span {
+    float: left;
+    height: 128px;
+    line-height: 128px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #f3908c;
+    margin-left: 30px;
+  }
+  .body-2 > ul > li:nth-of-type(2n+1) > img {
+    float: left;
+    height: 128px;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .diploma {
+    margin-top: 1rem;
+    width: 13rem;
+    height: 19.5rem;
+    border: 0.1rem solid #fcdfcb;
+  }
+  .diploma > ul > li > img {
+    display: block;
+    float: left;
+    width: 5rem;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+  }
+  .body-2 > p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: #ee6d69;
+    margin-bottom: 0.8rem;
+  }
+  .body-2 > ul > li {
+    height: 2.8rem;
+    width: inherit;
+    min-width: 320px;
+    border: 2px dashed #f9dfca;
+    margin-top: 5px;
+  }
+  .body-2 > ul > li:nth-of-type(2n) > img {
+    float: right;
+    height: 2.56rem;
+    margin-right: 4px;
+    margin-top: 4px;
+  }
+  .body-2 > ul > li:nth-of-type(2n) > span {
+    float: right;
+    height: 2.56rem;
+    line-height: 2.56rem;
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: #fabd95;
+  }
+  .body-2 > ul > li:nth-of-type(2n+1) > span {
+    float: left;
+    height: 2.56rem;
+    line-height: 2.56rem;
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: #f3908c;
+  }
+  .body-2 > ul > li:nth-of-type(2n+1) > img {
+    float: left;
+    height: 2.56rem;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .body-2 > ul > li > img {
+    display: none;
+  }
+  .body-2 > ul > li > span {
+    float: none !important;
+    display: block;
+    text-align: left;
+  }
+}
+/* 登录栏 */
+.login-panel {
+  float: right;
+  width: 100%;
+  height: 8rem;
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+.login-panel::before {
+  content: "网站后台建设中...请先通过其它渠道联系我们吧";
+  text-align: center;
+  font-size: 0.5rem;
+  color: #ea7bf8;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  margin-top: -400px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(219, 219, 219, 0.356);
+  background-image: url("../images/catgirl.png");
+  background-size: 100%;
+  z-index: 2;
+  display: none;
+  transition: all 1s;
+}
+.login-panel:hover::before {
+  margin-top: 0px;
+  display: block;
+  cursor: not-allowed;
+}
+.login-panel > div:nth-child(1) {
+  width: 100%;
+  height: 50px;
+  background-color: #ffcd91;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+.login-panel > ul {
+  display: block;
+}
+.login-panel > ul > li {
+  display: block;
+  width: 400px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.login-panel > ul > li > label:nth-child(n) {
+  text-align: right;
+  float: left;
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+}
+.login-panel > ul > li > input:nth-child(n) {
+  float: right;
+  height: 40px;
+  width: 300px;
+  border: solid 1px rgba(119, 136, 153, 0.514);
+}
+input[value="立即注册"] {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 25px auto;
+  background-color: #ddddddfd;
+  border: solid 1px rgba(119, 136, 153, 0.514);
+}
+input[value="立即注册"]:hover {
+  cursor: pointer;
+  background-color: #ffe6c7;
+}
+/* 教学优势 */
+.gray-back {
+  height: 16.5rem;
+  background-color: #f8f8f8;
+  padding-top: 1rem;
+}
+.slogan1 {
+  display: block;
+  width: auto;
+  height: 1rem;
+  margin: 0 auto;
+}
+.promotation1 {
+  display: block;
+  width: 15rem;
+  margin: 30px auto;
+}
+/* 证件展示+量身定制 */
+.subpro1,
+.subpro2 {
+  display: block;
+  width: auto;
+  height: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.slogan2 {
+  height: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+/* 教师信息，大屏 */
+.golden-teachermsg {
+  width: 1200px;
+  margin: 0 auto;
+}
+.golden-teachermsg::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.teacher1-all {
+  float: left;
+  width: 280px;
+  height: 530px;
+  box-shadow: 1px 1px 1px 0px #bdbdbd;
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.teacher1-all:hover {
+  background-color: #fde6d1;
+  margin-top: 0px;
+}
+.teacherimg1 {
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.teacherimg1 > div {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+.teacherimg1 > div:nth-of-type(1) {
+  background-position: center;
+  background-size: 100%;
+}
+.teacherimg1 > span:nth-of-type(1) {
+  float: left;
+  line-height: 80px;
+  text-indent: 1em;
+  font-size: 25px;
+  font-weight: 600;
+}
+.teacher-pr {
+  margin-top: 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 14px;
+}
+.tanaka-video {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* 课程设置 正常屏幕 */
+.classset-title {
+  font-size: 35px;
+  color: #e66c67;
+  font-weight: bolder;
+  text-align: center;
+}
+.classset-subtitle {
+  margin-top: 80px;
+  font-size: 30px;
+  color: #e6a067;
+  font-weight: bold;
+  text-align: center;
+}
+.scheme {
+  margin-top: 30px;
+}
+.scheme::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.scheme > ul > li > a {
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+  border: 1px solid #c55385;
+  width: 290px;
+  height: 360px;
+  margin-left: 10px;
+  background-color: rgba(255, 192, 203, 0.212);
+}
+.scheme > ul > li > a:hover {
+  background-color: #ffccd5;
+  /* color: rgb(255, 102, 0); */
+}
+.scheme > ul > li > a > p {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.scheme > ul > li > a > p:nth-child(2) {
+  font-size: 16px;
+  margin-top: 0em;
+}
+.scheme > ul > li > a > em {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: block;
+  font-size: 14px;
+  margin-top: 1em;
+}
+.scheme > ul > li > a > div {
+  font-size: 18px;
+  text-align: center;
+  visibility: hidden;
+}
+.scheme > ul > li > a:hover div {
+  visibility: visible;
+  text-shadow: 0px 0px 2px #ffc37e;
+  font-weight: 500;
+}
+@media screen and (max-width: 1200px) {
+  .golden-teachermsg {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  .teacher1-all {
+    float: left;
+    width: 7rem;
+    height: 12rem;
+    box-shadow: 1px 1px 1px 0px #bdbdbd;
+    border: 1px solid #e0e0e0;
+    margin-top: 0px;
+    margin-left: 0.3333rem;
+    margin-bottom: 0.333rem;
+  }
+  .teacherimg1 {
+    width: 100%;
+    height: 1.6rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .teacherimg1 > div {
+    float: left;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.8rem;
+    margin-left: 0.4rem;
+  }
+  .teacherimg1 > div:nth-of-type(1) {
+    background-position: center;
+    background-size: 100%;
+  }
+  .teacherimg1 > span:nth-of-type(1) {
+    float: left;
+    line-height: 1.6rem;
+    text-indent: 1em;
+    font-size: 0.4rem;
+    font-weight: 600;
+  }
+  .teacher-pr {
+    margin-top: 0.6rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-size: 0.4rem;
+  }
+  .tanaka-video {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+  }
+  /* 课程设置 适配小屏 */
+  .classset-title {
+    font-size: 0.7rem;
+    color: #e66c67;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .classset-subtitle {
+    margin-top: 1.6rem;
+    font-size: 0.6rem;
+    color: #e6a067;
+    font-weight: bold;
+    text-align: center;
+  }
+  .scheme {
+    width: 14rem;
+    margin-top: 0.6rem;
+  }
+  .scheme > ul > li > a {
+    display: block;
+    float: left;
+    margin-bottom: 0.2rem;
+    border: 1px solid #c55385;
+    width: 6.8rem;
+    height: 8rem;
+    margin-left: 0.2rem;
+    background-color: rgba(255, 192, 203, 0.212);
+  }
+  .scheme > ul > li > a:hover {
+    background-color: #ffccd5;
+  }
+  .scheme > ul > li > a > p {
+    font-size: 0.4rem;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  .scheme > ul > li > a > p:nth-child(2) {
+    font-size: 0.3rem;
+    margin-top: 0em;
+  }
+  .scheme > ul > li > a > em {
+    display: block;
+    font-size: 0.3rem;
+    margin-top: 1em;
+  }
+  .scheme > ul > li > a > div {
+    font-size: 0.35rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1rem;
+    visibility: visible;
+    color: #bf101d;
+    text-shadow: 0px 0px 2px #ffc37e;
+  }
+}
+/* 850区间变形 */
+@media screen and (min-width: 850px) {
+  .adv-poster {
+    padding-top: 1rem;
+    width: 12rem;
+  }
+  div[class*="swiper-slide swiper-post"] {
+    height: 8rem !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .scheme > ul > li > a {
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .scheme > ul > li > a {
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .scheme > ul > li > a {
+    height: 9rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .teacher1-all {
+    height: 13rem;
+  }
+  .scheme > ul > li > a {
+    height: 11rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .scheme > ul > li > a {
+    height: 12rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .teacher1-all {
+    height: 13rem;
+  }
+  .scheme > ul > li > a {
+    height: 13rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .scheme > ul > li > a {
+    height: 14rem;
+  }
+  .teacher1-all {
+    height: 14rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .scheme > ul > li > a {
+    height: 14rem;
+  }
+}
+@media screen and (max-width: 359px) {
+  .diploma > ul > li > img {
+    margin-left: 1.6rem;
+  }
+  .scheme > ul > li > a {
+    height: 16rem;
+  }
+  .body-2 > ul > li > span {
+    font-size: 0.2rem !important;
+    line-height: 2.56rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .scheme > ul > li > a {
+    height: 16rem;
+  }
+}

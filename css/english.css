@@ -1,0 +1,106 @@
+ /* 手机页面 */
+ @media screen and (max-width: 930px) {
+    .w{
+        display: none !important;
+    }
+    /* 头部 */
+    header{
+        height: 113vw !important;
+    }
+    header::before, section::before{
+        width: 100vw;
+        display: block;
+        content: "";
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    header::before{
+        height: 118vw;
+        background-image: url('../enimages/clip1.jpg');
+    }
+    /* 第一块 */
+    .body1{
+        height: 113vw !important;
+    }
+    .body1::before{
+        height: 113vw;
+        background-image: url('../enimages/clip3_02.jpg');
+    }
+    /* 第二块 */
+    .body2{
+        height: 87vw !important;
+    }
+    .body2::before{
+        height: 87vw;
+        background-image: url('../enimages/clip4.1.jpg');
+    }
+}
+/* 电脑页面 */
+/* body{
+    background-color: rgb(97, 97, 97);
+} */
+header{
+    width: 100%;
+    height: 1041px;
+}
+header > div{
+    width: inherit;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url('../enimages/bkb1_01.jpg');
+    /* background-size: 100%; */
+}
+header > div >div{
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../enimages/clip1.jpg');
+}
+/* 第二块 */
+section{
+    width: 100%;
+}
+.body1{
+    height: 1086px;
+}
+section > div{
+    width: inherit;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position:center;   
+}
+.bkb2{
+    background-image: url('../enimages/bkb2.jpg');
+}
+.bkb2 > div{
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../enimages/clip3_02.jpg');
+}
+.body2{
+    height: 800px;
+}
+/* 第三块 */
+.bkb3{
+    background-image: url('../enimages/bkb3.jpg');
+}
+.bkb3 > div{
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../enimages/clip4.1.jpg');
+}
+/* 分割线 */
+.cutline{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(39, 39, 39);
+}

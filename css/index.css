@@ -1,0 +1,330 @@
+ /* 顶部 */
+ header{
+    height: 80px;
+    width: 100%;
+    background-color: #ffbf80;
+    position:fixed;
+    z-index: 3;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    /* visibility: hidden; */
+}
+/* 占位解决漂浮问题，改变间距操作占位 */
+.placehold{
+    height: 80px;
+}
+.head1{
+    height: 80px;
+}
+.head1>img{
+    height: 80px;
+    float: left;
+}
+.head1>ul{
+    float: right;
+    margin-top: 30px;
+}
+.head1>ul>li{
+    display: block;
+    float: left;
+    margin: 0%;
+    line-height: 20px;
+    border-right: 1px solid;
+}
+.head1>ul>li>a{
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 20px;
+}
+.head1>ul>li:last-child{
+    border: none;
+}
+.head1>ul>li>a:hover{
+    background-color: #ffb265;
+    color: white;
+}
+ /* 头部二行 */
+ .block1{
+    overflow: hidden;
+    height: 500px;
+    background-image: url("../images/fujiyama.jpg");
+    background-size:100%;
+    background-position: center -50px;
+    background-repeat: no-repeat;
+ }
+ .poster-main{
+    margin-top: 40px;
+    height: 400px;
+    /* opacity: 100%; */
+}
+.poster-main>img{
+    float: left;
+    height: 400px;
+}
+.login-panel{
+    /* position: relative; */
+    float: right;
+    width: 590px;
+    height: 400px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.login-panel::before{
+    content: "网站后台建设中...请先通过其它渠道联系我们吧";
+    text-align: center;
+    font-size: 25px;
+    color: rgb(234, 123, 248);
+    font-weight: bold;
+    display: block;
+    position: relative;
+    margin-top: -400px;
+    width: 590px;
+    height: 400px;
+    background-color: rgba(219, 219, 219, 0.356);
+    background-image:url("../images/catgirl.png");
+    background-size: 100%;
+    z-index: 2;
+    display: none;
+    transition:all 1s;
+}
+.login-panel:hover::before{
+    margin-top: 0px;
+    display: block;
+    cursor:not-allowed;
+}
+.login-panel>div:nth-child(1){
+    width: 100%;
+    height: 50px;
+    background-color: #ffcd91;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+.login-panel>ul{
+    display: block;
+}
+.login-panel>ul>li{
+    display: block;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.login-panel>ul>li>label:nth-child(n){
+    text-align: right;
+    float: left;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+}
+.login-panel>ul>li>input:nth-child(n){
+    float: right;
+    height: 40px;
+    width: 300px;
+    border: solid 1px rgba(119, 136, 153, 0.514);
+}
+input[value="立即注册"]{
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 25px auto;
+    background-color: #ddddddfd;
+    border: solid 1px rgba(119, 136, 153, 0.514);
+}
+input[value="立即注册"]:hover{
+    cursor: pointer;
+    background-color: #ffe6c7;
+}
+/* 教学优势 */
+.slogan1{
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    /* margin-bottom: 40px; */
+}
+.promotation1{
+    display: block;
+    width: 1000px;
+    margin: 30px auto;
+}
+/* 证件展示 */
+.subpro1, .subpro2{
+    display: block;
+    height: 80px;
+    margin: 40px auto;
+    margin-top: 80px;
+}
+.diploma{
+    border: 10px #fcdfcb solid;
+    border-radius: 10px;
+}
+.diploma-exhibition{
+    margin-bottom: 30px;
+}
+.diploma-exhibition>li{
+    display: inline-block;
+    width: 240px;
+    height: 180px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.diploma-exhibition>li>img{
+    width: 100%;
+}
+/* 教程量身定制 */
+.body-2>p{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #ee6d69;
+    margin-bottom: 40px;
+}
+.body-2>ul>li{
+    height: 140px;
+    width: inherit;
+    border: 2px dashed #f9dfca;
+    margin-top: 5px;
+}
+.body-2>ul>li:nth-of-type(2n)>img{
+    float: right;
+    height: 128px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+.body-2>ul>li:nth-of-type(2n)>span{
+    float: right;
+    height: 128px;
+    line-height: 128px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fabd95;
+    margin-right: 30px;
+}
+.body-2>ul>li:nth-of-type(2n+1)>span{
+    float: left;
+    height: 128px;
+    line-height: 128px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #f3908c;
+    margin-left: 30px;
+}
+.body-2>ul>li:nth-of-type(2n+1)>img{
+    float: left;
+    height: 128px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+/* 教程量身定制 满足多种需求 */
+/* 金牌讲师 */
+.slogan2{
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+.golden-teachermsg{
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 55px;
+    height: 505px;
+}
+.teacher1-all{
+    float: left;
+    width: 300px;
+    height: 530px;
+    box-shadow: 1px 1px 1px 0px rgb(189, 189, 189);
+    border: 1px solid rgb(224, 224, 224);
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.teacher1-all:hover{
+    background-color: #fde6d1;
+    margin-top: 0px;
+}
+.teacherimg1{
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.teacherimg1>div{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.teacherimg1>div:nth-of-type(1){
+    /* background-image: url("images/teacher6-primg.png"); */
+    background-position: center;
+    background-size: 100%;
+}
+.teacherimg1>span:nth-of-type(1){
+    float: left;
+    line-height: 80px;
+    text-indent: 1em;
+    font-size: 25px;
+    font-weight: 600;
+}
+.teacher-pr{
+    margin-top: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 14px;
+}
+.tanaka-video{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/* 课程设置 */
+.classset-title{
+    font-size: 35px;
+    color: #e66c67;
+    font-weight: bolder;
+    text-align: center;
+}
+.classset-subtitle{
+    margin-top: 80px;
+    font-size: 25px;
+    color: #e6a067;
+    font-weight: bold;
+    text-align: center;
+}
+.scheme{
+    height: 700px;
+    margin-top: 30px;
+}
+.scheme>ul>li>a{
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    border: 1px solid #c55385;
+    width: 290px;
+    height: 350px;
+    margin-left: 10px;
+    background-color: rgba(255, 192, 203, 0.212);
+}
+.scheme>ul>li>a:hover{
+    background-color: rgb(255, 204, 213);
+    /* color: rgb(255, 102, 0); */
+}
+.scheme>ul>li>a>p{
+    font-size: 22px;
+    text-align: center;
+}
+.scheme>ul>li>a>em{
+    display: block;
+    font-size: 12px;
+    margin: 0 1em;
+}
+.scheme>ul>li>a>div{
+    visibility: hidden;
+}
+.scheme>ul>li>a:hover div{
+    visibility: visible;
+}
