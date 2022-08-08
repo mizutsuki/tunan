@@ -619,6 +619,7 @@ input[value="立即注册"]:hover {
   .adv-poster {
     padding-top: 1rem;
     width: 12rem;
+    height: 9rem;
   }
   div[class*="swiper-slide swiper-post"] {
     height: 8rem !important;
