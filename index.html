@@ -1,3 +1,21 @@
+<script>
+    var a_site = /www.tunan.vip/;
+    var now_site = location.href;
+    var ser_res = a_site.test(now_site);
+    // 检测是否访问主站
+    if (ser_res) {
+        console.log('正在访问主站......');
+        for (const key in navigator.languages) {
+            // 检测海外用户
+        if (navigator.languages[key] == 'ja') {
+            location.href = 'https://mizutsuki.github.io/tunan/';
+        }
+        else{
+            console.log('中国人不骗中国人');
+        }
+    }
+    }
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
