@@ -1,17 +1,23 @@
 <script>
     // 检测是否访问主站
-    for (const key in navigator.languages) {
-        // 检测海外用户
-        if (navigator.languages[key] == 'ja') {
-            // 忽略路径中转义符, 按/分开
-            var now_site = location.pathname.replace("\/","\/").split('\/');
-            // 查找最后一栏
-            var res = now_site[now_site.length-1];
-            // 拼接以访问对应文件
-            location.href = 'https://mizutsuki.github.io/tunan/' + res;
-        }
-        else{
-            console.log('正在访问主站......');
+    var main_site_reg = /www.tunan.vip/;
+    var main_site = location.href;
+    // 监测到在主站才判断
+    if (main_site_reg.test(main_site)) {
+        // 跳转
+        for (const key in navigator.languages) {
+            // 检测海外用户,切换对应界面
+            if (navigator.languages[key] == 'ja') {
+                // 忽略路径中转义符, 按/分开
+                var now_site = location.pathname.replace("\/","\/").split('\/');
+                // 查找最后index,主站为'',锚点不影响
+                var res = now_site[now_site.length-1];
+                // 拼接以访问对应文件
+                location.href = 'https://mizutsuki.github.io/tunan/' + res;
+            }
+            else{
+                console.log('正在访问主站......');
+            }
         }
     }
 </script>
