@@ -27,7 +27,7 @@
     }
     .m_jpg2{
         height: 113vw;
-        background-image: url('../enimages/clip3_02.jpg');
+        background-image: url('../enimages/clip3_1.jpg');
     }
     /* 第二块 */
     .body2{
@@ -84,7 +84,7 @@ section > div{
     line-height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../enimages/clip3_02.jpg');
+    background-image: url('../enimages/clip3_1.jpg');
 }
 .body2{
     height: 800px;
