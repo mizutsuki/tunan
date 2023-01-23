@@ -1,0 +1,130 @@
+<section class="golden-teacher">
+    <!-- 标题栏 -->
+    <div style="height: 2.6rem; width: 100%; background-color: transparent; padding-top: 10px;">
+        <img src="images/slogan2_03.png" alt="" class="slogan2">
+    </div>
+    <!-- 介绍栏 -->
+    <div class="golden-teachermsg">
+        <!-- 田中 -->
+        <div class="teacher1-all">
+            <!-- 姓名栏 -->
+            <div class="teacherimg1">
+                <div style="background-image: url('images/teacher6-primg.png');"></div>
+                <span>田中裕之</span>
+            </div>
+            <hr style="width: 80%; margin: 0 auto;">
+            <!-- 视频 -->
+            <video src="video/preview1.mp4" type="video/mp4" class="tanaka-video" controls></video>
+            <!-- 学历介绍 -->
+            <div class="teacher-pr">
+                <p>毕业学校：早稻田大学&nbsp;武汉大学</p>
+                <p>教学经验：5年</p>
+                <p>中文水平：hsk六级【最高级】母语水平</p>
+                <p>爱好：汉文化 历史学</p>
+            </div>
+        </div>
+        <!-- 鈴江真利子 -->
+        <div class="teacher1-all">
+            <!-- 姓名栏 -->
+            <div class="teacherimg1">
+                <div style="background-image: url('images/teacher7-primg.png');"></div>
+                <span>鈴江真利子</span>
+            </div>
+            <hr style="width: 80%; margin: 0 auto;">
+            <!-- 视频 -->
+            <video src="video/t2-output.mp4" type="video/mp4" class="tanaka-video" controls></video>
+            <!-- 学历介绍 -->
+            <div class="teacher-pr">
+                <p>毕业学校：广岛大学文学部</p>
+                <p>教学经验：2年</p>
+                <p>教师执照：有</p>
+                <p>中文水平：一年汉语学习</p>
+                <p>爱好：汉语文学</p>
+            </div>
+        </div>
+        <!-- 岡部老师 -->
+        <div class="teacher1-all">
+            <!-- 姓名栏 -->
+            <div class="teacherimg1">
+                <div style="background-image: url('images/teacher11-primg.png');"></div>
+                <span>岡部老师</span>
+            </div>
+            <hr style="width: 80%; margin: 0 auto;">
+            <!-- 视频 -->
+            <video src="video/t5-output.mp4" type="video/mp4" class="tanaka-video" controls></video>
+            <!-- 学历介绍 -->
+            <div class="teacher-pr">
+                <p>毕业学校: 东京の大学&nbsp;英国留学</p>
+                <p>教学经验: 3年</p>
+                <p>教师执照: 有</p>
+                <p>中文水平: 会一点中文</p>
+                <p>爱好: 旅行 美食</p>
+            </div>
+        </div>
+        <script>
+            /* <div class="teacher1-all">
+            <!-- 姓名栏 -->
+            <div class="teacherimg1">
+                <div style="background-image: url('images/teacher9-primg.png');"></div>
+                <span>榊原老师</span>
+            </div>
+            <hr style="width: 80%; margin: 0 auto;">
+            <!-- 视频 -->
+            <video src="video/t3-output.mp4" type="video/mp4" class="tanaka-video" controls></video>
+            <!-- 学历介绍 -->
+            <div class="teacher-pr">
+                <p>毕业学校：早稻田大学硕士</p>
+                <p>教学经验：1年</p>
+                <p>教师执照：有</p>
+                <p>中文水平：hsk二级</p>
+                <p>爱好：与学生对话</p>
+            </div>
+        </div> */
+        </script>
+        <!-- 关口老师 -->
+        <div class="teacher1-all">
+            <!-- 姓名栏 -->
+            <div class="teacherimg1">
+                <div style="background-image: url('images/teacher10-primg.png');"></div>
+                <span>关口老师</span>
+            </div>
+            <hr style="width: 80%; margin: 0 auto;">
+            <!-- 视频 -->
+            <video src="video/t4-output.mp4" type="video/mp4" class="tanaka-video" controls></video>
+            <!-- 学历介绍 -->
+            <div class="teacher-pr">
+                <p>擅长: 面试模拟，商务日语</p>
+                <p>教学经验: 1.5年</p>
+                <p>教师执照: 有</p>
+                <p>中文水平: 会一些中文</p>
+                <p>爱好: 旅行 去过16个国家</p>
+            </div>
+        </div>
+    </div>
+    <!-- 介绍栏第二排 -->
+    <script>
+/* <div class="golden-teachermsg">
+    
+        <!-- 岡部老师 -->
+        <div class="teacher1-all" style="visibility: hidden;">
+            <!-- 姓名栏 -->
+            <div class="teacherimg1">
+                <div style="background-image: url('#');"></div>
+                <span>岡部老师</span>
+            </div>
+            <hr style="width: 80%; margin: 0 auto;">
+            <!-- 视频 -->
+            <video src="#" type="video/mp4" class="tanaka-video" controls></video>
+            <!-- 学历介绍 -->
+            <div class="teacher-pr">
+                <p>毕业学校: 东京の大学&nbsp;英国留学</p>
+                <p>教学经验: 3年</p>
+                <p>教师执照: 有</p>
+                <p>中文水平: 会一点中文</p>
+                <p>爱好: 旅行 美食</p>
+            </div>
+        </div>
+    </div> */
+    </script>
+    
+</section>
